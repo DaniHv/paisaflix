@@ -1,0 +1,22 @@
+{
+  "name": "paisaflix",
+  "private": true,
+  "scripts": {
+    "backend": "yarn workspace @paisaflix/backend",
+    "frontend": "yarn workspace @paisaflix/frontend",
+    "dev": "yarn backend dev & yarn frontend dev",
+    "build": "yarn frontend build",
+    "start": "yarn backend:start & yarn frontend:start"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  }
+}

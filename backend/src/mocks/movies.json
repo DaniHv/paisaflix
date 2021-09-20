@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Star Wars - The last Jedi",
+    "genre": "fantasy",
+    "duration": 120,
+    "rating": 4,
+    "views": 4000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "coverImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631747585/APICHALLANGE/trailer3_euxvzy.png",
+    "trailerImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631747585/APICHALLANGE/trailer5_o9bfjt.png",
+    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+  },
+  {
+    "name": "Triggered",
+    "genre": "action",
+    "duration": 90,
+    "rating": 3.5,
+    "views": 1000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "coverImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631745380/APICHALLANGE/trigered_qpojbl.png",
+    "trailerImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631747585/APICHALLANGE/trailer2_w38qvq.png",
+    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+  },
+  {
+    "name": "Matrix",
+    "genre": "sci-fi",
+    "duration": 120,
+    "rating": 5,
+    "views": 60000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "coverImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631745382/APICHALLANGE/matrix_cnhfat.png",
+    "trailerImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631747585/APICHALLANGE/trailer4_d7sy5h.png",
+    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+  },
+  {
+    "name": "Dunkirk",
+    "genre": "war",
+    "duration": 90,
+    "rating": 4.8,
+    "views": 5000,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "coverImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631745380/APICHALLANGE/dunkirk_y1gosn.png",
+    "trailerImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631747585/APICHALLANGE/trailer3_euxvzy.png",
+    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+  },
+  {
+    "name": "Don´t breathe",
+    "genre": "thriller",
+    "duration": 90,
+    "rating": 4,
+    "views": 4200,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "coverImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631745381/APICHALLANGE/dontbreathe_ernboh.png",
+    "trailerImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631747585/APICHALLANGE/trailer_s2u8kt.png",
+    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+  }
+]

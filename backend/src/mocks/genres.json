@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "fantasy",
+    "name": "Fantasy"
+  },
+  {
+    "slug": "action",
+    "name": "Action"
+  },
+  {
+    "slug": "sci-fi",
+    "name": "Sci-Fi"
+  },
+  {
+    "slug": "war",
+    "name": "War"
+  },
+  {
+    "slug": "thriller",
+    "name": "Thriller"
+  }
+]
