@@ -22,7 +22,7 @@ const NewsletterForm: FC = () => {
 
   return (
     <>
-      <Title>Join our newsletter</Title>
+      <Title>{t('join_newsletter')}</Title>
 
       {isSubmited ? (
         <SuccessMessage>{t('thank_you_newsletter')}</SuccessMessage>
