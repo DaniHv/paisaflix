@@ -19,7 +19,8 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     "coverImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631745380/APICHALLANGE/trigered_qpojbl.png",
     "trailerImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631747585/APICHALLANGE/trailer2_w38qvq.png",
-    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+    "isPremiere": true
   },
   {
     "name": "Matrix",
@@ -30,7 +31,8 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     "coverImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631745382/APICHALLANGE/matrix_cnhfat.png",
     "trailerImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631747585/APICHALLANGE/trailer4_d7sy5h.png",
-    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+    "isPremiere": true
   },
   {
     "name": "Dunkirk",
@@ -41,7 +43,8 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     "coverImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631745380/APICHALLANGE/dunkirk_y1gosn.png",
     "trailerImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631747585/APICHALLANGE/trailer3_euxvzy.png",
-    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+    "isPremiere": true
   },
   {
     "name": "Don´t breathe",
@@ -52,6 +55,7 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     "coverImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631745381/APICHALLANGE/dontbreathe_ernboh.png",
     "trailerImage": "https://res.cloudinary.com/dvmll0ruo/image/upload/v1631747585/APICHALLANGE/trailer_s2u8kt.png",
-    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+    "trailerVideo": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+    "isPremiere": true
   }
 ]
