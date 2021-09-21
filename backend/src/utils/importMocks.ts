@@ -10,32 +10,22 @@ import { Genre, Movie, Trailer } from '../entities';
 (async () => {
   await createConnection();
 
-  console.log(await Genre.find());
+  for (const genre of genres) {
+    let genreEntity = new Genre();
+    Object.assign(genreEntity, genre);
+    await genreEntity.save();
+  }
 
-  await Promise.all(
-    genres.map(async (genre: any) => {
-      let genreEntity = new Genre();
-      Object.assign(genreEntity, genre);
-      await genreEntity.save();
-    }),
-  );
+  for (const movie of movies) {
+    let movieEntity = new Movie();
+    Object.assign(movieEntity, movie);
+    movieEntity.genre = await Genre.findOneOrFail({ slug: movie.genre });
+    await movieEntity.save();
+  }
 
-  await Promise.all(
-    movies.map(async (movie: any) => {
-      let movieEntity = new Movie();
-      Object.assign(movieEntity, movie);
-      movieEntity.genre = await Genre.findOneOrFail({ slug: movie.genre });
-      await movieEntity.save();
-    }),
-  );
-
-  await Promise.all(
-    trailers.map(async (trailer: any) => {
-      let trailerEntity = new Trailer();
-      Object.assign(trailerEntity, trailer);
-      await trailerEntity.save();
-    }),
-  );
-
-  return;
+  for (const trailer of trailers) {
+    let trailerEntity = new Trailer();
+    Object.assign(trailerEntity, trailer);
+    await trailerEntity.save();
+  }
 })();
