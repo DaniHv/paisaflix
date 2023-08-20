@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react';
+import { FC, Fragment, useEffect } from 'react';
 import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import {
@@ -74,50 +74,52 @@ const FeaturedMovies: FC<FeaturedMoviesProps> = ({
                 />
               ))
             : movies.map((movie) => (
-                <MovieCard
-                  key={movie.id}
-                  layoutId={movie.id.toString()}
-                  image={movie.coverImage}
-                  onClick={() => setSelectedMovie(movie)}
-                  variants={item}
-                  whileHover={{
-                    scale: 1.025,
-                  }}
-                  whileTap={{
-                    scale: 0.975,
-                  }}
-                >
-                  <MovieCardContent>
-                    <span>{movie.genre.name}</span>
-                    <div>
-                      <ul>
-                        <li>
-                          <Clock size={18} />
-                          {`${Math.floor(movie.duration / 60)} hr ${
-                            movie.duration % 60
-                          } mins`}
-                        </li>
-                        <li>
-                          <Eye size={18} />{' '}
-                          {`${movie.views / 1000}k ${t('movie_views')}`}
-                        </li>
-                      </ul>
-                      <h3>{movie.name}</h3>
-                    </div>
-                  </MovieCardContent>
-                </MovieCard>
+                <AnimateSharedLayout type="crossfade" key={movie.id.toString()}>
+                  <MovieCard
+                    key={movie.id}
+                    image={movie.coverImage}
+                    layoutId={movie.id.toString()}
+                    onClick={() => setSelectedMovie(movie)}
+                    variants={item}
+                    whileHover={{
+                      scale: 1.025,
+                    }}
+                    whileTap={{
+                      scale: 0.975,
+                    }}
+                  >
+                    <MovieCardContent>
+                      <span>{movie.genre.name}</span>
+                      <div>
+                        <ul>
+                          <li>
+                            <Clock size={18} />
+                            {`${Math.floor(movie.duration / 60)} hr ${
+                              movie.duration % 60
+                            } mins`}
+                          </li>
+                          <li>
+                            <Eye size={18} />{' '}
+                            {`${movie.views / 1000}k ${t('movie_views')}`}
+                          </li>
+                        </ul>
+                        <h3>{movie.name}</h3>
+                      </div>
+                    </MovieCardContent>
+                  </MovieCard>
+
+                  <AnimatePresence>
+                    {selectedMovie?.id === movie.id && (
+                      <MovieModal
+                        movie={selectedMovie}
+                        layoutId={movie.id.toString()}
+                        onClose={() => setSelectedMovie(null)}
+                      />
+                    )}
+                  </AnimatePresence>
+                </AnimateSharedLayout>
               ))}
         </MoviesGrid>
-
-        <AnimatePresence>
-          {selectedMovie && (
-            <MovieModal
-              movie={selectedMovie}
-              layoutId={selectedMovie.id.toString()}
-              onClose={() => setSelectedMovie(null)}
-            />
-          )}
-        </AnimatePresence>
       </AnimateSharedLayout>
 
       {loadMore && (

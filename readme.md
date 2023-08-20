@@ -1,6 +1,6 @@
 # Hola Paisano, this is paisaflix!
 
-Este repo contiene mi resultado del challenge de paisaflix (https://holy-vase-97a.notion.site/Paisaflix-3c32de4fc23c47c59b2bb49ecc05a495), cuya presentanción podrás encontrar en presentacion.pdf
+Este repo contiene mi resultado del challenge de paisaflix cuya presentanción podrás encontrar en presentacion.pdf
 
 <p align="center"><img src="./screenshot.png?raw=true"></p>
 
